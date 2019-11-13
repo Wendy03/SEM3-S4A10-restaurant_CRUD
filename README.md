@@ -4,7 +4,7 @@
 
 ## Installing
 
-##### 環境
+#### 環境
 
 ```
 - node.js v-10.15.0
@@ -12,10 +12,11 @@
 - Express
 - Express-Handlebars
 - body-parse
-- [Mongodb](https://www.mongodb.com/download-center/community)
 - Mongoose
 
 ```
+
+##### 確認本機是否安裝 Mongodb
 
 ##### 1.開啟終端機到存放專案本機位置並執行:
 
@@ -26,6 +27,10 @@
 ```
 1.切換目錄到專案: cd SEM3-S4A10-restaurant_CRUD
 2.安裝套件: npm install
+3.終端機上執行 todoSeeder.js
+ - cd ~/todo/models/seeds
+ - node todoSeeder.js
+ - 確認Robo 3T 資料已經建立了
 ```
 
 ##### 3.開啟程式
@@ -44,7 +49,7 @@
 
 ##### 5. 使用者可以刪除一家餐廳
 
-##### 截圖
+## 截圖
 
 ###### 1.首頁
 
