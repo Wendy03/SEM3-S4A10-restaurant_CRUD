@@ -65,4 +65,4 @@
 
 ###### 4.刪除
 
-![image](https://github.com/Wendy03/SEM3-S4A10-restaurant_CRUD/blob/master/public/img/S4A10%E9%A6%96%E9%A0%81.PNG)
+![image](https://github.com/Wendy03/SEM3-S4A10-restaurant_CRUD/blob/master/public/img/S4A10%E5%88%AA%E9%99%A4.PNG)
