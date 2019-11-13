@@ -2,7 +2,7 @@
   <div class="edit-form py-5 mt-5 col-7 mx-auto">
     <form action="/restaurants/{{{restaurant.id}}}/edit" method="POST">
       <!-- Form Name -->
-      <h1 class="text-center pb-5">修改餐廳資料</h1>
+      <h1 class="text-center pb-5">修改<span class="text-info">{{{restaurant.name}}}</span>餐廳資料</h1>
       <table class="mx-5">
         <tbody>
           <tr>
@@ -26,7 +26,7 @@
           <tr>
             <td>餐廳圖片:</td>
             <td><input type="text" class="form-control" name="image" id="image" placeholder="http://"
-                value="{{{restaurant.image}}}" required></td>
+                value="{{{restaurant.image}}}" pattern="(http|https):\/\/([\w.]+\/?)\S*" required></td>
           </tr>
 
           <tr>
@@ -46,7 +46,8 @@
           <tr>
             <td>Google Map:</td>
             <td width="400"><input type="text" class="form-control" name="google_map" id="google_map"
-                placeholder="https://goo.gl/maps/" value="{{{restaurant.google_map}}}" required></td>
+                placeholder="https://goo.gl/maps/" value="{{{restaurant.google_map}}}"
+                pattern="(http|https):\/\/([\w.]+\/?)\S*" required></td>
           </tr>
 
           <tr>
