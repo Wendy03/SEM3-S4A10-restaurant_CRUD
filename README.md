@@ -35,7 +35,10 @@
 
 ##### 3.開啟程式
 
-`nodemon app.js`
+```
+1. 終端機輸入: nodemon run dev
+2. 開啟網頁輸入: http://localhost:3000
+```
 
 ## 主要功能
 
