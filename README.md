@@ -16,7 +16,7 @@
 
 ```
 
-##### 確認本機是否安裝 Mongodb
+##### 確認本機是否安裝 [Mongodb](https://www.mongodb.com/download-center/community) 、 [Robo 3T](https://robomongo.org/)
 
 ##### 1.開啟終端機到存放專案本機位置並執行:
 
