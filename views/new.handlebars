@@ -25,7 +25,7 @@
           <tr>
             <td>餐廳圖片:</td>
             <td width="400"><input type="text" class="form-control" name="image" id="image" placeholder="http://"
-                required>
+                pattern="(http|https):\/\/([\w.]+\/?)\S*" required>
             </td>
           </tr>
 
@@ -46,7 +46,7 @@
           <tr>
             <td>Google Map:</td>
             <td width="400"><input type="text" class="form-control" name="google_map" id="google_map"
-                placeholder="https://goo.gl/maps/" required></td>
+                placeholder="https://goo.gl/maps/" pattern="(http|https):\/\/([\w.]+\/?)\S*" required></td>
           </tr>
 
           <tr>
@@ -65,8 +65,8 @@
       </table>
 
       <div class="pt-4 text-center">
-        <button type="submit" class="btn btn-primary">確認新增</button>
-        <a href="/" class="btn btn-outline-danger">取消</a>
+        <button type="submit" class="btn btn-primary mr-2">確認新增</button>
+        <a href="/" class="btn btn btn-secondary">取消</a>
       </div>
     </form>
   </div>
