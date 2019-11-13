@@ -87,6 +87,11 @@ header {
   margin-top: 150px;
 }
 
+.card:hover {
+  box-shadow: 0 16px 22px 0 rgba(90, 91, 95, 0.5);
+  top: -7px;
+}
+
 @media screen and (max-width: 992px) {
 
   .card img {
