@@ -59,7 +59,9 @@ app.get('/search', (req, res) => {
         restaurant.category.toLowerCase().includes(keyword.toLowerCase())
       )
     })
-    res.render('index', { style: 'index.css', restaurants: searchResult, keyword })
+
+    const emptyDate = searchResult.length === 0 ? true : false
+    res.render('index', { style: 'index.css', restaurants: searchResult, keyword, emptyDate })
   })
 })
 
