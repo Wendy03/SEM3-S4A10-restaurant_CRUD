@@ -60,13 +60,13 @@ app.get('/search', (req, res) => {
       )
     })
 
-    const emptyDate = searchResult.length === 0 ? true : false
-    res.render('index', { style: 'index.css', restaurants: searchResult, keyword, emptyDate })
+    const isDataEmpty = searchResult.length === 0 ? true : false
+    res.render('index', { style: 'index.css', restaurants: searchResult, keyword, isDataEmpty })
   })
 })
 
 // 新增一筆 restaurant 頁面
-app.get('/restaurants/new', (req, res) => {
+app.get('/restaurants/new', (_req, res) => {
   return res.render('new', { style: 'form.css' })
 })
 
