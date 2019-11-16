@@ -35,7 +35,7 @@ const Restaurant = require('./models/restaurant')
 
 // 設定路由
 // Restaurant 首頁
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   Restaurant.find((err, restaurants) => {
     if (err) return console.error(err)
     return res.render('index', { style: 'index.css', restaurants })
@@ -43,7 +43,7 @@ app.get('/', (req, res) => {
 })
 
 // 列出全部 Restaurant
-app.get('/restaurants', (req, res) => {
+app.get('/restaurants', (_req, res) => {
   return res.redirect('/')
 })
 
